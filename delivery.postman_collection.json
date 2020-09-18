@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "e63a4a32-0b78-485b-b89c-677d5df8d878",
+		"name": "delivery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get delivery person by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8082/deliveryPersons/get/1"
+			},
+			"response": []
+		},
+		{
+			"name": "delegate order to delivery person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orderId\":1,\n    \"deliveryPersonId\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8082/orderDelivery/delegate"
+			},
+			"response": []
+		},
+		{
+			"name": "get all active delivery persons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8082/deliveryPersons/isActive"
+			},
+			"response": []
+		},
+		{
+			"name": "get all orders being served by deliveryPerson by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8082/deliveryPersons/isServing/1"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
