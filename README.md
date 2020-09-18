@@ -1,6 +1,7 @@
-# Restaurant project
+# Delivery system project
 
-Backend project (API) for a food delivery application.
+Backend project (API) for a order delivery application.
+Prerequisites - to be run in combination with restaurant service 
 
 ## Model entities
 
